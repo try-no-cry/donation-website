@@ -6,6 +6,10 @@ import BackgroundVideo from './components/BackgroundVideo'
 import CardComponent from './components/CardComponent';
 import Carousel from 'react-elastic-carousel';
 import  { Component } from 'react';
+import ProfileComponent from './components/ProfileComponent';
+import '../src/componentsCSS/ProfileComponentStyle.css';
+import FooterComponent from './components/FooterComponent';
+ 
  
 class App extends Component{
     state = {  OurWorkCards:[{id:1,
@@ -17,8 +21,23 @@ class App extends Component{
                         {id:3,
                          imageUrl:"https://www.gettyimages.com/gi-resources/images/500px/983794168.jpg",
                          imageDesc:"Some image desc"}
-                     ] 
-            };
+                     ],
+               profileCards:[{id:1,
+                imageUrl:"https://www.gettyimages.com/gi-resources/images/500px/983794168.jpg",
+                name:"John Doe",
+                designation:"Some image desc"},
+                {id:2,
+                 imageUrl:"https://www.gettyimages.com/gi-resources/images/500px/983794168.jpg",
+                 name:"John Doe",
+                 designation:"Some image desc"},
+                 {id:3,
+                  imageUrl:"https://www.gettyimages.com/gi-resources/images/500px/983794168.jpg",
+                  name:"John Doe",
+                  designation:"Some image desc"}
+              ],      
+            
+           
+                    };
 
    
 
@@ -49,6 +68,20 @@ class App extends Component{
                     {this.state.OurWorkCards.map(OurWorkCard => <CardComponent key={OurWorkCard.id} imageUrl={OurWorkCard.imageUrl} imageDesc={OurWorkCard.imageDesc}/>)}
                 </Carousel>
                 
+                
+                    <div class="profileCont">
+                        <div class="row">
+                        {this.state.profileCards.map(profileCard => <ProfileComponent key={profileCard.id} imageUrl={profileCard.imageUrl} name={profileCard.name} designation={profileCard.designation}/>)}
+
+                        </div>
+                    </div>  
+                    <br/>
+                    <br/>
+               
+                <div>
+                    <FooterComponent/>
+                </div>
+               
          </React.Fragment>
      )
  }

@@ -29,7 +29,7 @@ class BackgroundVideo extends Component {
         </header>
         {/* Page section example for content below the video header */}
                 <blockquote className="blockquote">
-                    <p>Nobody made a greater mistake than he who did nothing because he could only do a little.</p>
+                    <p style={{  }}>Nobody made a greater mistake than he who did nothing because he could only do a little.</p>
                 </blockquote>
         
     
