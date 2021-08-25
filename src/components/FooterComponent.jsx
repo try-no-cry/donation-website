@@ -7,6 +7,6 @@ export default function FooterComponent() {
 
         <div className="footer">
         <center><p >All rights reserved @DonateChanda </p></center>
-      </div>
+       </div>
         )
 }

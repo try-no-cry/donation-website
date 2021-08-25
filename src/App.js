@@ -9,6 +9,8 @@ import  { Component } from 'react';
 import ProfileComponent from './components/ProfileComponent';
 import '../src/componentsCSS/ProfileComponentStyle.css';
 import FooterComponent from './components/FooterComponent';
+import AboutUs from './components/AboutUs';
+import ContactUs from './components/ContactUs/ContactUs';
  
  
 class App extends Component{
@@ -60,8 +62,13 @@ class App extends Component{
      return (
          
          <React.Fragment>
+             
                  <Navbar/>
-                <BackgroundVideo/> 
+                 <br/>
+                 <br/>
+                 <ContactUs/>
+                 {/* <AboutUs/> */}
+                {/*  <BackgroundVideo/> 
                 <hr></hr>
                 <center><h3><u>Some of our works</u></h3></center> 
                 <Carousel breakPoints={breakPoints}>
@@ -80,7 +87,8 @@ class App extends Component{
                
                 <div>
                     <FooterComponent/>
-                </div>
+                </div> */}
+                 
                
          </React.Fragment>
      )

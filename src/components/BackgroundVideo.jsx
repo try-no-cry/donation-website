@@ -19,7 +19,7 @@ class BackgroundVideo extends Component {
           <div className="container h-100">
             <div className="d-flex h-100 text-center align-items-center">
               <div className="w-100 text-white">
-                <h3 className="display-3">Help People in Need.<h5 className="pt-2 pb-2"> Your donation can make a real difference in your community.</h5></h3>
+                <h3 className="display-3">Help People in <mark>Need.</mark><h5 className="pt-2 pb-2"> Your donation can make a real difference in your community.</h5></h3>
                 <p className="lead mb-0">
                     <button className="btn btn-danger draw">Donate Now!</button>
                 </p>
